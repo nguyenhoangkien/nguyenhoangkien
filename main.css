@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#nav {
+    background-color: black;
+    width: 100%;
+    height: 49px;
+}
+#nav li {
+    display: inline-block;
+    position: relative;
+}
+#nav li:hover .subnav {
+    display: block;
+}
+#nav .subnav li:hover a,
+#nav > li:hover > a {
+    background-color: #ccc;
+    color: #000;
+}
+#nav > li > a {
+    color: white;
+    text-transform: uppercase;
+}
+#nav li  a  {
+    text-decoration: none ;
+    line-height: 49px;
+    padding: 0 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+}
+#nav .subnav  {
+    position: absolute;
+    color: #000 ;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(139, 136, 136);
+    display: none;
+}
+#nav .subnav li {
+    display: block;
+    padding: 0 -12px;
+}
+#nav .subnav a {
+    color: black;
+}
+#slider {
+    background-color: #ccc;
+    min-height: 500px;
+}
